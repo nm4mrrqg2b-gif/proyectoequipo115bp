@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Utilizando elementos multimedia</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif; /* ← NUEVA FUENTE GLOBAL */
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #8C8030;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        background-color: #8C8030;
+        padding: 10px 0;
+        border-bottom: 2px solid #ccc;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    nav a {
+        color: #590000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .contenido {
+        padding: 30px;
+        background-color: #FFFFFF;
+        font-size: 26px;
+        color: #8a1d1d;
+        font-weight: 600;
+        min-height: calc(100vh - 160px - 50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #8C8030;
+        color: white;
+        text-align: center;
+        padding: 18px;
+        font-size: 22px;
+        font-weight: 600;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .audio-area {
+        width: 100%;
+    }
+</style>
+<script>
+function mostrarAudio() {
+    document.getElementById("contenido").innerHTML = `
+        <div class="audio-area">
+            <audio controls autoplay style="width: 100%; max-width: 500px;">
+                <source src="audi.mp3" type="audio/mp3">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+    `;
+}
+
+function limpiar() {
+    document.getElementById("contenido").innerHTML = "AQUÍ SE DESPLEGARÁ EL CONTENIDO DE LA PÁGINA";
+}
+</script>
+</head>
+<body>
+<header>
+    UTILIZANDO ELEMENTOS MULTIMEDIA
+</header>
+<nav>
+    <a onclick="mostrarAudio()">Reproducir audio</a>
+    <a onclick="limpiar()">Limpiar página</a>
+</nav>
+<div id="contenido" class="contenido">
+    AQUÍ SE DESPLEGARÁ EL CONTENIDO DE LA PÁGINA
+</div>
+</body>
+</html>

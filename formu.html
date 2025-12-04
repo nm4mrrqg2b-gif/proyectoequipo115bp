@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario</title>
+<style>
+    body {
+        margin: 0;
+        background: #1a1a1a;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .form-box {
+        width: 90%;
+        max-width: 500px;
+        background: #262626;
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.15);
+        border: 2px solid #4d4d4d;
+    }
+
+    h2 {
+        text-align: center;
+        color: #ffda00;
+        font-size: 30px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    label {
+        color: #e6e6e6;
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        margin-top: 18px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 8px;
+        background: #3a3a3a;
+        border: 2px solid #555;
+        color: white;
+        font-size: 15px;
+        transition: 0.3s;
+        outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #ffda00;
+        box-shadow: 0 0 10px #ffda00;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        width: 100%;
+        background: #ffda00;
+        color: #000;
+        border: none;
+        padding: 14px;
+        font-size: 18px;
+        margin-top: 25px;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ffe64c;
+        box-shadow: 0 0 12px #ffe64c;
+    }
+</style>
+</head>
+<body>
+<div class="form-box">
+    <h2>Formulario sobre enfematicos</h2>
+    <form action="mailto:florez.isaak_23080409@cetis054.edu.mx" method="post">
+        <label>1.¿Como fue tu experienza al usar esta pagina?</label>
+        <select name="Opinión general" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Excelente</option>
+            <option>Buena</option>
+            <option>Regular</option>
+            <option>Mala</option>
+			<option>no la vi</option>
+        </select>
+        <label>2. ¿Que fue lo que mas te llamo la atecion?</label>
+        <input type="text" name="Elemento favorito" placeholder="Escribe aquí..." required>
+        <label>3. ¿Qué deberia mejorarias?</label>
+        <textarea name="Sugerencias" rows="4" placeholder="Escribe tu sugerencia..."></textarea>
+        <label>Tu nombre:</label>
+        <input type="text" name="Nombre" placeholder="Ingresa tu nombre" required>
+        <label>Tu correo:</label>
+        <input type="email" name="Correo" placeholder="Ingresa tu correo">
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>

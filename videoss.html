@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Utilizando elementos multimedia</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #8C8030;
+    }
+
+    header {
+        background-color: #8C8030;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        background-color: #8C8030;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-size: 20px;
+        border-bottom: 3px solid #8C8030;
+    }
+
+    nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    #videoContainer {
+        background-color: #FFFFFF;
+        height: calc(100vh - 190px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    iframe {
+        width: 80%;
+        height: 80%;
+        border: 12px solid black;
+        border-radius: 12px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+    }
+
+    footer {
+        background-color: #8C8030;
+        color: white;
+        text-align: center;
+        padding: 18px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+</style>
+
+<script>
+function cargarVideo(url) {
+    document.getElementById("videoContainer").innerHTML = `
+        <iframe src="${url}" frameborder="0" allowfullscreen></iframe>
+    `;
+}
+
+function limpiar() {
+    document.getElementById("videoContainer").innerHTML = `
+        <h2 style="color:#8a1d1d; font-weight:600;">
+            AQUÍ SE DESPLEGARÁ EL CONTENIDO DE LA PÁGINA
+        </h2>
+    `;
+}
+</script>
+
+</head>
+<body>
+<header>
+    UTILIZANDO ELEMENTOS MULTIMEDIA
+</header>
+
+<nav>
+    <a onclick="cargarVideo('https://www.youtube.com/embed/Lx6tv1stHvE')">Reproducir video 1</a>
+    <a onclick="cargarVideo('https://www.youtube.com/embed/efMG1LxErDc')">Reproducir video 2</a>
+    <a onclick="cargarVideo('https://www.youtube.com/embed/FjZ-Dt9Wkig')">Reproducir video 3</a>
+    <a onclick="limpiar()">Limpiar página</a>
+</nav>
+
+<div id="videoContainer">
+    AQUÍ SE DESPLEGARÁ EL CONTENIDO DE LA PÁGINA
+</div>
+
+</body>
+</html>

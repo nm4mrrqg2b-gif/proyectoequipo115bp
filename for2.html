@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Formulario de Estudio</title>
+<style>
+    body{
+        background:#8C8030;
+        font-family:Arial, sans-serif;
+        margin:20px;
+    }
+    .contenedor{
+        background:#fff;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px #0003;
+    }
+    h1,h2{
+        text-align:center;
+    }
+    .bloque{
+        margin-bottom:25px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+<h1>FORMULARIO EDUCATIVO</h1>
+
+<form action="mailto:florez.isaak_23080409@cetis054.edu.mx" method="post">
+
+<div class="bloque">
+<h2>Datos Personales</h2>
+
+<p>Nombre completo:<br>
+<input type="text" name="nombre" maxlength="50" style="width:70%;"></p>
+
+<p>Domicilio:<br>
+<textarea name="domicilio" rows="2" style="width:80%;"></textarea></p>
+
+<p>Correo electrónico:<br>
+<input type="email" name="correo" style="width:70%;"></p>
+
+<p>Teléfono celular:<br>
+<input type="tel" name="celular" maxlength="10"></p>
+</div>
+
+
+<div class="bloque">
+<h2>Información Escolar</h2>
+
+<p>Grado y grupo:<br>
+<input type="text" name="grado" maxlength="4"></p>
+
+<p>Turno:<br>
+<label><input type="radio" name="turno" value="M"> Matutino</label><br>
+<label><input type="radio" name="turno" value="V"> Vespertino</label>
+</p>
+
+<p>Especialidad:<br>
+<label><input type="radio" name="esp" value="Conta"> Contabilidad</label><br>
+<label><input type="radio" name="esp" value="Ciber"> Ciberseguridad</label><br>
+<label><input type="radio" name="esp" value="Intel"> Inteligencia</label><br>
+<label><input type="radio" name="esp" value="Ofi"> Ofimática</label><br>
+<label><input type="radio" name="esp" value="Prog"> Programación</label><br>
+<label><input type="radio" name="esp" value="Sec"> Secretariado</label>
+</p>
+</div>
+
+
+<div class="bloque">
+<h2>Cuestionario sobre Estimulantes y NSP</h2>
+
+<p>1. ¿Qué efecto principal producen los estimulantes de tipo anfetamínico en el sistema nervioso central?<br>
+<label><input type="radio" name="q1" value="a"> Disminuyen la actividad cerebral</label><br>
+<label><input type="radio" name="q1" value="b"> Aumentan la actividad cerebral</label><br>
+<label><input type="radio" name="q1" value="c"> Provocan sueño profundo</label><br>
+<label><input type="radio" name="q1" value="d"> Reducen la frecuencia cardíaca</label>
+</p>
+
+<p>2. ¿Cuál de las siguientes sustancias pertenece al grupo de los estimulantes de tipo anfetamínico?<br>
+<label><input type="radio" name="q2" value="a"> LSD</label><br>
+<label><input type="radio" name="q2" value="b"> Heroína</label><br>
+<label><input type="radio" name="q2" value="c"> MDMA (éxtasis)</label><br>
+<label><input type="radio" name="q2" value="d"> Alcohol</label>
+</p>
+
+<p>3. ¿Por qué las Nuevas Sustancias Psicoactivas (NSP) son especialmente peligrosas?<br>
+<label><input type="radio" name="q3" value="a"> Porque siempre se venden con receta médica</label><br>
+<label><input type="radio" name="q3" value="b"> Porque su composición es estable y predecible</label><br>
+<label><input type="radio" name="q3" value="c"> Porque se fabrican en laboratorios oficiales</label><br>
+<label><input type="radio" name="q3" value="d"> Porque su contenido es incierto y sus efectos impredecibles</label>
+</p>
+
+<p>4. ¿Cuál de los siguientes tipos de ayuda puede recibir una persona que consume drogas?<br>
+<label><input type="radio" name="q4" value="a"> Únicamente castigo legal</label><br>
+<label><input type="radio" name="q4" value="b"> Solo terapia espiritual</label><br>
+<label><input type="radio" name="q4" value="c"> Atención médica, psicológica y apoyo comunitario</label><br>
+<label><input type="radio" name="q4" value="d"> Ningún tipo de apoyo profesional</label>
+</p>
+
+<p>5. ¿Qué función cumplen las líneas de apoyo y orientación para consumidores de drogas?<br>
+<label><input type="radio" name="q5" value="a"> Vender sustancias de manera segura</label><br>
+<label><input type="radio" name="q5" value="b"> Proporcionar información y apoyo emocional de forma anónima</label><br>
+<label><input type="radio" name="q5" value="c"> Realizar diagnósticos médicos avanzados</label><br>
+<label><input type="radio" name="q5" value="d"> Sustituir completamente la terapia profesional</label>
+</p>
+
+</div>
+
+
+<div class="bloque">
+<h2>Comentario</h2>
+<textarea name="comentario" rows="5" style="width:90%;"></textarea>
+</div>
+
+<div style="text-align:center;">
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpiar">
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
